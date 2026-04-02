@@ -1,0 +1,106 @@
+/* Configuraciones Generales */
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #e6f2ff;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    transition: background-color 0.4s;
+}
+
+/* Modo Oscuro (se activa con JS) */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+body.dark-mode .main-table {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+body.dark-mode h3 {
+    color: #4da3ff;
+    border-bottom-color: #4da3ff;
+}
+
+/* Contenedor Principal */
+.main-table {
+    width: 85%;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid #cccccc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Encabezado */
+.header {
+    background-color: #636363;
+    color: white;
+}
+
+.header-inner-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header-text-cell {
+    padding: 40px;
+    vertical-align: middle;
+}
+
+.header-photo-cell {
+    padding: 20px;
+    vertical-align: middle;
+    text-align: center;
+    width: 250px;
+}
+
+.profile-photo {
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 { margin: 0; font-size: 26px; }
+h2 { margin: 5px 0 15px 0; font-weight: normal; color: #f0f0f0; }
+
+.content-cell { padding: 30px; }
+.content-inner-table { width: 100%; border-collapse: collapse; }
+
+h3 { 
+    color: #003366; 
+    border-bottom: 2px solid #003366; 
+    padding-bottom: 5px; 
+    margin-top: 0;
+}
+
+ul { padding-left: 20px; }
+.contact-info { font-size: 0.9em; line-height: 1.6; }
+
+/* Botón Flotante */
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* Habilidades Interactivas */
+.skill-list li {
+    padding: 5px;
+    transition: transform 0.2s;
+    cursor: default;
+}
+.skill-list li:hover {
+    transform: translateX(10px);
+    color: #007bff;
+    font-weight: bold;
+}
